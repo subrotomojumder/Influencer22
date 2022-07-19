@@ -1,0 +1,89 @@
+body{
+    background-color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: 50px auto 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul>li{
+    display: inline;
+    margin-left: 15px;
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+}
+/* main part style */
+.company-show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+.camera1{
+    padding-top: 30px;
+    background-image: url(images/Circle\ design.svg);
+}
+button{
+    background-color: red;
+    margin-top: 5%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    border: none;
+}
+.company-name{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 90%;
+    border-top:1px solid rgb(228, 217, 217) ;
+    border-bottom:1px solid rgb(228, 217, 217) ;
+    margin: 5vw auto 5vw;
+    padding: 2vw 0 1vw;
+}
+
+.popular-collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.products{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+}
+.collection{
+    padding: 1em;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 20px 5px rgb(187, 177, 177);
+    border-radius: 10px
+}
+
+.show-tow{
+    margin-left: 4%;
+}
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+
+    .company-name{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .company-show{
+        flex-direction: column-reverse;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+}
