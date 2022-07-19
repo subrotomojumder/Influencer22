@@ -53,13 +53,13 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow: hidden; */
 }
 .products{
     margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2%;
+    margin-bottom: 100px;
 }
 .collection{
     padding: 1em;
